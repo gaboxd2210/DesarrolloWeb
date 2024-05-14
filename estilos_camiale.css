@@ -4,108 +4,177 @@ Fecha: 08/04/2024 19:00
 Descripcion: Aplicar estilos al titulo h1
 */
 * {
-    color:white;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-    text-align: center;   
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  text-align: center;
 }
-
 
 .titulo {
   padding: 10px;
 }
 body {
-    background: white;
-    /*background-image: url("fondo_2.jpeg");*/
-  }
+  background: white;
+  /*background-image: url("fondo_2.jpeg");*/
+}
 nav ul {
-    width: 105%;
-    margin: auto;
-    list-style-type: none;
-    background-color: #595151;
+  width: 105%;
+  margin: auto;
+  list-style-type: none;
+  background-color: #595151;
 }
 
 nav li {
-    display: inline-flex;
+  display: inline-flex;
 }
 
-nav a{
-    padding: 25px;
-    width: 250px;
+nav a {
+  padding: 25px;
+  width: 250px;
 }
 
-nav ul a:hover{
-    background-color:black;
+nav ul a:hover {
+  background-color: black;
 }
 
 .contenido {
-    display: flex;
-     width: 90%;
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 0;
-   
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 
 .contenido .informacion {
-    width: 70%;
-    margin-top: auto;
-    margin-left: 10%;
+  width: 70%;
+  margin-top: auto;
+  margin-left: 10%;
 }
 
-.contenido .informacion div{
-    
-    width: 70%;
-    padding: 15px;
-    /*background-color: #595151;*/
-    border-radius: 8px;
-    margin-bottom: 0 ;
+.contenido .informacion div {
+  width: 70%;
+  padding: 15px;
+  /*background-color: #595151;*/
+  border-radius: 8px;
+  margin-bottom: 0;
 }
 
 .contenido .informacion a {
-    color: #595151;
+  color: #595151;
 }
 
 .contenido .informacion p {
-    color: #595151;
+  color: #595151;
 }
 
-.contenido .informacion img{
-    width: 350px;
-    border-radius: 5px;
+.contenido .informacion img {
+  width: 350px;
+  border-radius: 5px;
 }
 
 .contenido .variado {
-    width: 50%;
-    margin-right: 100px;
-    margin-top: 80px;
+  width: 50%;
+  margin-right: 100px;
+  margin-top: 80px;
 }
 
-.contenido .variado div{
-    border-radius: 15px;
-    padding: 5px;
-    height: 600px;
+.contenido .variado div {
+  border-radius: 15px;
+  padding: 5px;
+  height: 600px;
 }
 
-.contenido .variado img{
-
-    padding: 0px;
-
+.contenido .variado img {
+  padding: 0px;
 }
 .contenido .variado h2 {
-  
-    color: #595151;
-
+  color: #595151;
 }
 
-.pie-pagina{
-    background-color:#595151;
-    width: 105%;
-    
+.pie-pagina {
+  background-color: #595151;
+  width: 105%;
 }
 
-.pie-pagina p{
-    padding: 35px;
+.pie-pagina p {
+  padding: 35px;
+}
+/* Añadiduras NOA CORP*/
+
+/* CAMBIOS DE COLOR DE BARRA DE BOSSTRAP LETRAS  */
+.navbar-nav .nav-item .nav-link {
+  color: #00ffff; /* COLOR A GUSTO  */
+  text-shadow: 0 0 5px #ffffff; /* Destellos blancos */
+}
+/* parte del encabezado de la imagen de pro.png*/
+.encabezado {
+  background-image: url("imagenes/PRO.png"); /* Ruta de tu imagen para el encabezado*/
+  background-size: cover; /* para que la imagen se rellene por completo  */
+  background-position: top; /* Alinear la imagen al tope del encabezado */
+  height: 200px; /* que tan ancho ira la imagen */
+}
+
+video {
+  width: 100%; /* Esto hará que el video ocupe el 100% del ancho del contenedor */
+}
+
+/* estilo de centrado y tamaño para la letra y ajustes de linea  */
+.descripcion {
+  color: black;
+  margin-top: 20px; /* agrega un margen de la letra 
+    font-size: 16px; /* Tamaño de fuente para la descripción */
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+  text-align: justify;
+}
+
+/* PARA H2 DE PLATOS A LA CARTA y titulo de video */
+.fosforescente {
+  color: #000; /* Color de texto negro */
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000,
+    0 0 50px #000, 0 0 60px #000, 0 0 70px #000, 0 0 80px #000; /* Sombras para simular efecto de luz */
+  animation: destello 1s infinite; /* para   que la animacion se repita constantemente  */
+}
+
+@keyframes destello {
+  0% {
+    opacity: 0.8; /* Opacidad inicial */
+  }
+  50% {
+    opacity: 1; /* Opacidad en la mitad de la animación */
+  }
+  100% {
+    opacity: 0.8; /* Opacidad al final de la animación */
+  }
+}
+
+.footer {
+  padding: 50px 0;
+  color: #0c0505; /* Color del texto */
+  text-align: center;
+}
+
+.footer h5 {
+  color: #080202; /* Color del título */
+}
+
+.footer ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer {
+  background-image: url("imagenes/PRO.png");
+  background-size: cover;
+  padding: 50px 0;
+  color: white;
+}
+
+/* Estilos para el texto dentro de las etiquetas <li> */
+.footer li {
+  color: black; /* Cambia el color del texto a negro */
 }
